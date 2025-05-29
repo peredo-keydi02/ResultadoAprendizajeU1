@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/logoYao.png" type="image/png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
+    <title>Resultado de aprendizaje U1</title>
+</head>
+<body>
+    <div class="contenedor">
+        
+        <div class="secciones presentacion">
+            <img src="/img/logoYao.png" alt="YAO">
+            <div class="info">
+                <h1>YAO</h1>
+                <h3>Bienvenido a YAO</h3>
+                <div class="texto">Bienvenido a YAO, un mundo d&oacute;nde el cosmos depende de ti.
+                    Un lugar donde tus decisiones habr&aacute;n de sobrevivir a la tentaci&oacute;n del poder y la venganza.
+                </div>
+            </div>
+        </div>
+        <div class="secciones sinopsis">
+            <h1 class="titulo-Sinopsis">¿Qué es YAO?</h1>
+
+            <div class="texto-juego">
+                Se desarrolla un videojuego, dentro del cual el usuario 
+                se registrar&aacute; guardando su informaci&oacute;n en la base de datos firebase. Una vez 
+                registrado este tendr&aacute; la oportunidad de adentrarse al videojuego, el cual se 
+                desenvuelve dentro de la cultura azteca, donde los dioses enemigos del pueblo 
+                azteca tienen como prop&oacute;sito 
+                destruir el equilibrio del cosmos, sin embargo, los dioses aztecas como 
+                Huitzilopochtli, Quetzalcóatl, Tezcatlipoca y Tlaloc han seleccionado un guerrero 
+                (jugador) quien enfrentar&aacute; a tales enemigos con la ayuda de estos dioses. 
+                Asimismo, durante el juego antes de cada nivel se mostrará al usuario un 
+                pequeño cuadro di&aacute;logos donde se le hace saber que es lo que est&aacute; pasando y 
+                porque ha sido seleccionado.  
+            </div>
+        </div>
+        <div class="secciones personajes">
+            <h1 class="titulo-SP">Personajes</h1>
+            <div class="personaje">
+                <h1 class="titulo-personajes">Dioses</h1>
+                <div class="tarjetas">
+                    <div class="tarjeta-personaje">
+                        <img src="/img/quetza.png" alt="">
+                        <h4>Quetzalc&oacute;atl</h4>
+                    </div>
+                    <div class="tarjeta-personaje">
+                        <img src="/img/tlaloc.png" alt="">
+                        <h4>Tl&aacute;loc</h4>
+                    </div>
+                    <div class="tarjeta-personaje">
+                        <img src="/img/tlate.png" alt="">
+                        <h4>Tonaltecuhtli</h4>
+                    </div>
+                    <div class="tarjeta-personaje">
+                        <img src="/img/hui.png" alt="">
+                        <h4>Huitzilopochtli</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="personaje">
+                <h1 class="titulo-personajes">Enemigos</h1>
+                <div class="tarjetas">
+                    <div class="tarjeta-personaje">
+                        <img src="/img/itz.png" alt="">
+                        <h4>Itztlacoliuhqui</h4>
+                    </div>
+                    <div class="tarjeta-personaje">
+                        <img src="/img/mitla.png" alt="">
+                        <h4>Mictlantecuhtli</h4>
+                    </div>
+                    <div class="tarjeta-personaje">
+                        <img class="mariposa" src="/img/papalote.png" alt="">
+                        <h4>Itzpap&aacute;lotl</h4>
+                    </div>
+                    <div class="tarjeta-personaje">
+                        <img src="/img/cipatli.png" alt="">
+                        <h4>Cipactli</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="secciones proposito">
+            <div class="texto-proposito">
+                <h1 class="titulo-proposito">Prop&oacute;sito del juego</h1>
+                <div class="texto-proposito-juego">Hacer conciencia de la riqueza cultural existente en M&eacute;xico mediante un videojuego
+                    basado en las creencias de la cultura azteca. Una de las culturas m&aacute;s importantes en nuestro pa&iacute;s
+                </div>
+                <div class="contenedor-button">
+                    <button id="btn-abirModal">¿Un bailesito azteca?</button>
+                </div>
+            </div>
+            <img src="/img/logoYao.png" alt="logo YAO">
+
+        </div>
+        <div class="overlay cerrar" id="overlay"></div>
+        <div class="modal" id="modal">
+            <a href="#" class="cerrar"><i class="fa-solid fa-xmark"></i></a>           
+            <iframe width="640" height="365" src="https://www.youtube.com/embed/qrdYdM4WocE?si=NCxlJzd3CHQ5yv4V"></iframe>        
+        </div>
+        
+    </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js')
+            .then(() => console.log('Service Worker registrado correctamente'))
+            .catch(error => console.error('Error al registrar Service Worker:', error));
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/011dd8fc9a.js" crossorigin="anonymous"></script>
+    <script src="/sw.js"></script>
+</body>
+</html>

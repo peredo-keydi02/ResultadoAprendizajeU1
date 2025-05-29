@@ -1,0 +1,22 @@
+{
+    "name": "Resultado de aprendizaje U1",
+    "short_name": "RAU1", 
+    "theme_color": "#935c45",
+    "background_color": "#e1c3b5",
+    "display": "standalone",
+    "scope": "/ResultadoAprendizajeU1/",
+    "start_url": "/ResultadoAprendizajeU1/",
+    "icons": [
+    {
+        "src": "icons/icon-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+    },
+    {
+        "src": "icons/icon-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+    }
+    ]
+
+}
